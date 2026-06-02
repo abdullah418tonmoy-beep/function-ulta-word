@@ -1,21 +1,30 @@
-
 #include<stdio.h>
-void reverseSentence();
+
 int main()
 
 {
-    printf("Enter a sentence: ");
-    reverseSentence();
-    return 0;
-}
-void reverseSentence()
-{
-    char c;
-    scanf("%c",&c);
-    if (c!= '\n')
-    {
-        reverseSentence();
-        printf("%c",c);
-    }
-}
+    int i, age[5];
 
+    for (i=0; i<5;i++)
+
+    {
+
+        printf("Enter %d number: \n",i+1);
+        scanf("%d",&age[i]);
+
+    }
+      for (i=0; i<5;i++)
+
+    {
+      printf("Enter %d number= %d",i+1,age[i]);
+
+        printf("%d\n",age[i]);
+
+
+    }
+
+
+
+    return 0;
+
+}
